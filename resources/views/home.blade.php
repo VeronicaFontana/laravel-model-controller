@@ -10,7 +10,7 @@
                     <h5 class="card-title">{{ $movie->title }}</h5>
                     <p class="card-text">{{ $movie->nationality }}</p>
                     <p class="card-text">{{ $movie->vote }}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="{{ route("details", ["id" => $movie->id]) }}" class="btn btn-primary">Info</a>
                 </div>
             </div>
         @endforeach
